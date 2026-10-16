@@ -1,0 +1,1021 @@
+{
+ "source_file": "Chhattisgarh_Formal_Survey_Report-2.pptx",
+ "slide_size_emu": [
+  12191695,
+  6858000
+ ],
+ "slide_count": 13,
+ "image_audit": {
+  "ppt_media_files": [],
+  "a_blip_references_in_ppt_xml": 0,
+  "package_thumbnail_only": [
+   "docProps/thumbnail.jpeg"
+  ],
+  "note": "No photographs, logos or illustrations exist in the source package."
+ },
+ "slides": [
+  {
+   "index": 1,
+   "layout": "Blank",
+   "shape_count": 13,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s01-b01",
+     "shape": "TextBox 8",
+     "para": 0,
+     "top": 1234440,
+     "left": 777240,
+     "text": "CHHATTISGARH",
+     "role": "cover_title"
+    },
+    {
+     "id": "s01-b02",
+     "shape": "TextBox 9",
+     "para": 0,
+     "top": 1965960,
+     "left": 777240,
+     "text": "FORMAL SURVEY REPORT",
+     "role": "cover_subtitle"
+    },
+    {
+     "id": "s01-b03",
+     "shape": "TextBox 10",
+     "para": 0,
+     "top": 2788920,
+     "left": 822960,
+     "text": "Geography  •  Environment  •  Lifestyle",
+     "role": "cover_topics"
+    },
+    {
+     "id": "s01-b04",
+     "shape": "TextBox 10",
+     "para": 1,
+     "top": 2788920,
+     "left": 822960,
+     "text": "Technology  •  Development",
+     "role": "cover_topics"
+    },
+    {
+     "id": "s01-b05",
+     "shape": "TextBox 11",
+     "para": 0,
+     "top": 3977639,
+     "left": 822960,
+     "text": "Ancient name: Dakshin Kosala",
+     "role": "cover_ancient"
+    },
+    {
+     "id": "s01-b06",
+     "shape": "TextBox 12",
+     "para": 0,
+     "top": 4709160,
+     "left": 822960,
+     "text": "Team Leader: Neelam Patel",
+     "role": "cover_meta"
+    },
+    {
+     "id": "s01-b07",
+     "shape": "TextBox 12",
+     "para": 1,
+     "top": 4709160,
+     "left": 822960,
+     "text": "Team Name: Brainy Bunch",
+     "role": "cover_meta"
+    },
+    {
+     "id": "s01-b08",
+     "shape": "TextBox 12",
+     "para": 2,
+     "top": 4709160,
+     "left": 822960,
+     "text": "Class / Section: CSE, Section A2",
+     "role": "cover_meta"
+    },
+    {
+     "id": "s01-b09",
+     "shape": "TextBox 12",
+     "para": 3,
+     "top": 4709160,
+     "left": 822960,
+     "text": "Subject: Rural Immersion and Innovation",
+     "role": "cover_meta"
+    },
+    {
+     "id": "s01-b10",
+     "shape": "TextBox 12",
+     "para": 4,
+     "top": 4709160,
+     "left": 822960,
+     "text": "Submitted to: Mrs Tanvi Nandi Ma'am",
+     "role": "cover_meta"
+    },
+    {
+     "id": "s01-b11",
+     "shape": "TextBox 13",
+     "para": 0,
+     "top": 5943600,
+     "left": 9189720,
+     "text": "ACADEMIC PROJECT",
+     "role": "cover_badge"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 2,
+   "layout": "Blank",
+   "shape_count": 25,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s02-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "INDEX / CONTENTS",
+     "role": "title"
+    },
+    {
+     "id": "s02-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  02",
+     "role": "footer"
+    },
+    {
+     "id": "s02-b03",
+     "shape": "TextBox 5",
+     "para": 0,
+     "top": 1143000,
+     "left": 640080,
+     "text": "Survey topics",
+     "role": "subtitle"
+    },
+    {
+     "id": "s02-b04",
+     "shape": "TextBox 7",
+     "para": 0,
+     "top": 1645920,
+     "left": 914400,
+     "text": "Introduction and Place Profile",
+     "role": "item"
+    },
+    {
+     "id": "s02-b05",
+     "shape": "TextBox 9",
+     "para": 0,
+     "top": 2606040,
+     "left": 914400,
+     "text": "Geographical Details and Population",
+     "role": "item"
+    },
+    {
+     "id": "s02-b06",
+     "shape": "TextBox 11",
+     "para": 0,
+     "top": 3566160,
+     "left": 914400,
+     "text": "Environmental Details",
+     "role": "item"
+    },
+    {
+     "id": "s02-b07",
+     "shape": "TextBox 13",
+     "para": 0,
+     "top": 4526280,
+     "left": 914400,
+     "text": "Habitat and Lifestyle",
+     "role": "item"
+    },
+    {
+     "id": "s02-b08",
+     "shape": "TextBox 15",
+     "para": 0,
+     "top": 5486400,
+     "left": 914400,
+     "text": "Technology and Science",
+     "role": "item"
+    },
+    {
+     "id": "s02-b09",
+     "shape": "TextBox 17",
+     "para": 0,
+     "top": 1645920,
+     "left": 6446520,
+     "text": "Amenities Available",
+     "role": "item"
+    },
+    {
+     "id": "s02-b10",
+     "shape": "TextBox 19",
+     "para": 0,
+     "top": 2606040,
+     "left": 6446520,
+     "text": "Challenges",
+     "role": "item"
+    },
+    {
+     "id": "s02-b11",
+     "shape": "TextBox 21",
+     "para": 0,
+     "top": 3566160,
+     "left": 6446520,
+     "text": "Suggestions / Modifications",
+     "role": "item"
+    },
+    {
+     "id": "s02-b12",
+     "shape": "TextBox 23",
+     "para": 0,
+     "top": 4526280,
+     "left": 6446520,
+     "text": "Government Facilities and Schemes",
+     "role": "item"
+    },
+    {
+     "id": "s02-b13",
+     "shape": "TextBox 25",
+     "para": 0,
+     "top": 5486400,
+     "left": 6446520,
+     "text": "Conclusion and Remarks",
+     "role": "item"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 3,
+   "layout": "Blank",
+   "shape_count": 12,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s03-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "INTRODUCTION AND PLACE PROFILE",
+     "role": "title"
+    },
+    {
+     "id": "s03-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  03",
+     "role": "footer"
+    },
+    {
+     "id": "s03-b03",
+     "shape": "TextBox 6",
+     "para": 0,
+     "top": 1234440,
+     "left": 1051560,
+     "text": "Chhattisgarh is a state in central India, formed on 1 November 2000 after separation from Madhya Pradesh.",
+     "role": "item"
+    },
+    {
+     "id": "s03-b04",
+     "shape": "TextBox 8",
+     "para": 0,
+     "top": 2103120,
+     "left": 1051560,
+     "text": "The capital is Raipur; the state is known for forests, mineral resources, agriculture, tribal culture, and industry.",
+     "role": "item"
+    },
+    {
+     "id": "s03-b05",
+     "shape": "TextBox 10",
+     "para": 0,
+     "top": 2971800,
+     "left": 1051560,
+     "text": "The ancient region associated with present-day Chhattisgarh is commonly known as Dakshin Kosala.",
+     "role": "item"
+    },
+    {
+     "id": "s03-b06",
+     "shape": "TextBox 12",
+     "para": 0,
+     "top": 3840480,
+     "left": 1051560,
+     "text": "The state combines rural and urban communities, traditional livelihoods, and modern infrastructure development.",
+     "role": "item"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 4,
+   "layout": "Blank",
+   "shape_count": 12,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s04-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "GEOGRAPHICAL DETAILS AND POPULATION",
+     "role": "title"
+    },
+    {
+     "id": "s04-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  04",
+     "role": "footer"
+    },
+    {
+     "id": "s04-b03",
+     "shape": "TextBox 6",
+     "para": 0,
+     "top": 1234440,
+     "left": 1051560,
+     "text": "Located in central India; it shares boundaries with Madhya Pradesh, Maharashtra, Telangana, Odisha, Jharkhand, and Uttar Pradesh.",
+     "role": "item"
+    },
+    {
+     "id": "s04-b04",
+     "shape": "TextBox 8",
+     "para": 0,
+     "top": 2103120,
+     "left": 1051560,
+     "text": "Terrain includes plains, plateaus, forested hills, river valleys, and mineral-rich regions.",
+     "role": "item"
+    },
+    {
+     "id": "s04-b05",
+     "shape": "TextBox 10",
+     "para": 0,
+     "top": 2971800,
+     "left": 1051560,
+     "text": "The Mahanadi and its tributaries are important to the state's geography and agriculture.",
+     "role": "item"
+    },
+    {
+     "id": "s04-b06",
+     "shape": "TextBox 12",
+     "para": 0,
+     "top": 3840480,
+     "left": 1051560,
+     "text": "The 2011 Census recorded a population of approximately 2.55 crore; newer estimates may differ.",
+     "role": "item"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 5,
+   "layout": "Blank",
+   "shape_count": 12,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s05-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "ENVIRONMENTAL DETAILS",
+     "role": "title"
+    },
+    {
+     "id": "s05-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  05",
+     "role": "footer"
+    },
+    {
+     "id": "s05-b03",
+     "shape": "TextBox 6",
+     "para": 0,
+     "top": 1234440,
+     "left": 1051560,
+     "text": "Chhattisgarh has extensive forests, diverse wildlife, rivers, waterfalls, and mineral deposits.",
+     "role": "item"
+    },
+    {
+     "id": "s05-b04",
+     "shape": "TextBox 8",
+     "para": 0,
+     "top": 2103120,
+     "left": 1051560,
+     "text": "Forests support biodiversity and many rural and tribal livelihoods.",
+     "role": "item"
+    },
+    {
+     "id": "s05-b05",
+     "shape": "TextBox 10",
+     "para": 0,
+     "top": 2971800,
+     "left": 1051560,
+     "text": "Concerns include forest degradation, mining and industrial pollution, water pressure, and waste management.",
+     "role": "item"
+    },
+    {
+     "id": "s05-b06",
+     "shape": "TextBox 12",
+     "para": 0,
+     "top": 3840480,
+     "left": 1051560,
+     "text": "Useful measures: native-species afforestation, water conservation, cleaner industry, renewable energy, responsible mining, and recycling.",
+     "role": "item"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 6,
+   "layout": "Blank",
+   "shape_count": 12,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s06-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "HABITAT AND LIFESTYLE",
+     "role": "title"
+    },
+    {
+     "id": "s06-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  06",
+     "role": "footer"
+    },
+    {
+     "id": "s06-b03",
+     "shape": "TextBox 6",
+     "para": 0,
+     "top": 1234440,
+     "left": 1051560,
+     "text": "People live in villages, small towns, and growing urban centres such as Raipur, Bilaspur, Durg-Bhilai, and Korba.",
+     "role": "item"
+    },
+    {
+     "id": "s06-b04",
+     "shape": "TextBox 8",
+     "para": 0,
+     "top": 2103120,
+     "left": 1051560,
+     "text": "Rural livelihoods include farming, forest-produce collection, animal husbandry, crafts, and local trade.",
+     "role": "item"
+    },
+    {
+     "id": "s06-b05",
+     "shape": "TextBox 10",
+     "para": 0,
+     "top": 2971800,
+     "left": 1051560,
+     "text": "Culture is expressed through folk music and dance, festivals, traditional crafts, cuisine, and regional languages.",
+     "role": "item"
+    },
+    {
+     "id": "s06-b06",
+     "shape": "TextBox 12",
+     "para": 0,
+     "top": 3840480,
+     "left": 1051560,
+     "text": "Access to education, healthcare, transport, and commerce varies; remote forested areas may face longer travel distances.",
+     "role": "item"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 7,
+   "layout": "Blank",
+   "shape_count": 14,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s07-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "TECHNOLOGY AND SCIENCE",
+     "role": "title"
+    },
+    {
+     "id": "s07-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  07",
+     "role": "footer"
+    },
+    {
+     "id": "s07-b03",
+     "shape": "TextBox 6",
+     "para": 0,
+     "top": 1234440,
+     "left": 914400,
+     "text": "Technology supports mining, steel production, power generation, agriculture, transport, public services, and urban management.",
+     "role": "item"
+    },
+    {
+     "id": "s07-b04",
+     "shape": "TextBox 8",
+     "para": 0,
+     "top": 2194560,
+     "left": 914400,
+     "text": "Digital services and mobile connectivity can improve access to information and government services.",
+     "role": "item"
+    },
+    {
+     "id": "s07-b05",
+     "shape": "TextBox 10",
+     "para": 0,
+     "top": 3154680,
+     "left": 914400,
+     "text": "Potential improvements include sensor-based mine safety and predictive maintenance in factories.",
+     "role": "item"
+    },
+    {
+     "id": "s07-b06",
+     "shape": "TextBox 12",
+     "para": 0,
+     "top": 1234440,
+     "left": 6446520,
+     "text": "Solar-powered cold storage, digital marketplaces, offline-first healthcare tools, and regional-language STEM platforms can help.",
+     "role": "item"
+    },
+    {
+     "id": "s07-b07",
+     "shape": "TextBox 14",
+     "para": 0,
+     "top": 2194560,
+     "left": 6446520,
+     "text": "Innovation should be affordable, accessible to rural users, locally suitable, and supported by training and maintenance.",
+     "role": "item"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 8,
+   "layout": "Blank",
+   "shape_count": 14,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s08-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "AMENITIES AVAILABLE",
+     "role": "title"
+    },
+    {
+     "id": "s08-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  08",
+     "role": "footer"
+    },
+    {
+     "id": "s08-b03",
+     "shape": "TextBox 6",
+     "para": 0,
+     "top": 1234440,
+     "left": 914400,
+     "text": "Education: schools, colleges, technical institutes, universities, and skill-development centres operate across the state.",
+     "role": "item"
+    },
+    {
+     "id": "s08-b04",
+     "shape": "TextBox 8",
+     "para": 0,
+     "top": 2194560,
+     "left": 914400,
+     "text": "Healthcare: government hospitals, community health centres, primary health centres, and frontline health workers provide services.",
+     "role": "item"
+    },
+    {
+     "id": "s08-b05",
+     "shape": "TextBox 10",
+     "para": 0,
+     "top": 3154680,
+     "left": 914400,
+     "text": "Transport and utilities: roads, railways, electricity, mobile networks, and water-supply systems support communities and industry.",
+     "role": "item"
+    },
+    {
+     "id": "s08-b06",
+     "shape": "TextBox 12",
+     "para": 0,
+     "top": 1234440,
+     "left": 6446520,
+     "text": "Urban services: major cities provide markets, public facilities, waste-management services, and selected digital and smart-city systems.",
+     "role": "item"
+    },
+    {
+     "id": "s08-b07",
+     "shape": "TextBox 14",
+     "para": 0,
+     "top": 2194560,
+     "left": 6446520,
+     "text": "Access and quality can vary by region, with specialist healthcare and utilities harder to reach in some remote areas.",
+     "role": "item"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 9,
+   "layout": "Blank",
+   "shape_count": 14,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s09-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "CHALLENGES",
+     "role": "title"
+    },
+    {
+     "id": "s09-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  09",
+     "role": "footer"
+    },
+    {
+     "id": "s09-b03",
+     "shape": "TextBox 6",
+     "para": 0,
+     "top": 1234440,
+     "left": 914400,
+     "text": "Uneven access to healthcare and education, rural connectivity gaps, post-harvest losses, and limited cold-chain storage.",
+     "role": "item"
+    },
+    {
+     "id": "s09-b04",
+     "shape": "TextBox 8",
+     "para": 0,
+     "top": 2194560,
+     "left": 914400,
+     "text": "Market-access barriers for local producers and artisans.",
+     "role": "item"
+    },
+    {
+     "id": "s09-b05",
+     "shape": "TextBox 10",
+     "para": 0,
+     "top": 3154680,
+     "left": 914400,
+     "text": "Mining and industrial activity can cause air and water pollution, land disturbance, and worker-safety risks.",
+     "role": "item"
+    },
+    {
+     "id": "s09-b06",
+     "shape": "TextBox 12",
+     "para": 0,
+     "top": 1234440,
+     "left": 6446520,
+     "text": "Infrastructure projects must consider forests, wildlife, and local communities.",
+     "role": "item"
+    },
+    {
+     "id": "s09-b07",
+     "shape": "TextBox 14",
+     "para": 0,
+     "top": 2194560,
+     "left": 6446520,
+     "text": "Ensure investment, technology, and skill-development benefits reach small businesses, rural residents, and tribal communities fairly.",
+     "role": "item"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 10,
+   "layout": "Blank",
+   "shape_count": 18,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s10-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "SUGGESTIONS / MODIFICATIONS",
+     "role": "title"
+    },
+    {
+     "id": "s10-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  10",
+     "role": "footer"
+    },
+    {
+     "id": "s10-b03",
+     "shape": "TextBox 6",
+     "para": 0,
+     "top": 1234440,
+     "left": 914400,
+     "text": "Set up affordable solar-powered cold rooms and shared processing units near farming and forest-produce clusters.",
+     "role": "item"
+    },
+    {
+     "id": "s10-b04",
+     "shape": "TextBox 8",
+     "para": 0,
+     "top": 2194560,
+     "left": 914400,
+     "text": "Improve mine and factory safety with sensors, worker alerts, preventive maintenance, and regular training.",
+     "role": "item"
+    },
+    {
+     "id": "s10-b05",
+     "shape": "TextBox 10",
+     "para": 0,
+     "top": 3154680,
+     "left": 914400,
+     "text": "Expand telemedicine, offline-capable health tools, and reliable emergency transport for remote settlements.",
+     "role": "item"
+    },
+    {
+     "id": "s10-b06",
+     "shape": "TextBox 12",
+     "para": 0,
+     "top": 4114800,
+     "left": 914400,
+     "text": "Support tribal artisans through fair-price digital marketplaces, product photography, packaging, and direct buyer links.",
+     "role": "item"
+    },
+    {
+     "id": "s10-b07",
+     "shape": "TextBox 14",
+     "para": 0,
+     "top": 1234440,
+     "left": 6446520,
+     "text": "Provide portable science kits, maker spaces, regional-language learning resources, and industry mentorship.",
+     "role": "item"
+    },
+    {
+     "id": "s10-b08",
+     "shape": "TextBox 16",
+     "para": 0,
+     "top": 2194560,
+     "left": 6446520,
+     "text": "Encourage cleaner production, wastewater treatment, recycling, renewable energy, and restoration of mined land.",
+     "role": "item"
+    },
+    {
+     "id": "s10-b09",
+     "shape": "TextBox 18",
+     "para": 0,
+     "top": 3154680,
+     "left": 6446520,
+     "text": "Consult local residents and monitor accessibility, environmental effects, and fair distribution of benefits.",
+     "role": "item"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 11,
+   "layout": "Blank",
+   "shape_count": 12,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s11-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "GOVERNMENT FACILITIES AND SCHEMES",
+     "role": "title"
+    },
+    {
+     "id": "s11-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  11",
+     "role": "footer"
+    },
+    {
+     "id": "s11-b03",
+     "shape": "TextBox 6",
+     "para": 0,
+     "top": 1234440,
+     "left": 1051560,
+     "text": "Residents may qualify for programmes related to food security, rural employment, housing, health coverage, farmer support, scholarships, skills, and tribal welfare.",
+     "role": "item"
+    },
+    {
+     "id": "s11-b04",
+     "shape": "TextBox 8",
+     "para": 0,
+     "top": 2103120,
+     "left": 1051560,
+     "text": "Examples include MGNREGA, PMAY (housing), Ayushman Bharat / PM-JAY (eligible health coverage), and PM-KISAN (eligible farmers).",
+     "role": "item"
+    },
+    {
+     "id": "s11-b05",
+     "shape": "TextBox 10",
+     "para": 0,
+     "top": 2971800,
+     "left": 1051560,
+     "text": "Scholarship schemes may support eligible students.",
+     "role": "item"
+    },
+    {
+     "id": "s11-b06",
+     "shape": "TextBox 12",
+     "para": 0,
+     "top": 3840480,
+     "left": 1051560,
+     "text": "Availability and eligibility rules vary; confirm current details with official state portals, relevant departments, or local government service centres.",
+     "role": "item"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 12,
+   "layout": "Blank",
+   "shape_count": 12,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s12-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "CONCLUSION",
+     "role": "title"
+    },
+    {
+     "id": "s12-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  12",
+     "role": "footer"
+    },
+    {
+     "id": "s12-b03",
+     "shape": "TextBox 6",
+     "para": 0,
+     "top": 1234440,
+     "left": 1051560,
+     "text": "Chhattisgarh has strengths in agriculture, forests, minerals, energy, industry, and cultural heritage.",
+     "role": "item"
+    },
+    {
+     "id": "s12-b04",
+     "shape": "TextBox 8",
+     "para": 0,
+     "top": 2103120,
+     "left": 1051560,
+     "text": "These resources create opportunities for inclusive economic and social development.",
+     "role": "item"
+    },
+    {
+     "id": "s12-b05",
+     "shape": "TextBox 10",
+     "para": 0,
+     "top": 2971800,
+     "left": 1051560,
+     "text": "Future progress can be strengthened through practical innovation, better public amenities, environmental protection, quality education, and healthcare access.",
+     "role": "item"
+    },
+    {
+     "id": "s12-b06",
+     "shape": "TextBox 12",
+     "para": 0,
+     "top": 3840480,
+     "left": 1051560,
+     "text": "Fair opportunities for rural and tribal communities are essential for balanced development.",
+     "role": "item"
+    }
+   ],
+   "images": []
+  },
+  {
+   "index": 13,
+   "layout": "Blank",
+   "shape_count": 13,
+   "picture_shapes": 0,
+   "has_notes": false,
+   "blocks": [
+    {
+     "id": "s13-b01",
+     "shape": "TextBox 2",
+     "para": 0,
+     "top": 320040,
+     "left": 594360,
+     "text": "REMARKS / FIELD OBSERVATIONS",
+     "role": "title"
+    },
+    {
+     "id": "s13-b02",
+     "shape": "TextBox 4",
+     "para": 0,
+     "top": 6473952,
+     "left": 594360,
+     "text": "CHHATTISGARH FORMAL SURVEY REPORT  •  13",
+     "role": "footer"
+    },
+    {
+     "id": "s13-b03",
+     "shape": "TextBox 5",
+     "para": 0,
+     "top": 1143000,
+     "left": 640080,
+     "text": "Final review",
+     "role": "subtitle"
+    },
+    {
+     "id": "s13-b04",
+     "shape": "TextBox 7",
+     "para": 0,
+     "top": 1645920,
+     "left": 1051560,
+     "text": "This report presents a general survey of Chhattisgarh using the topics specified for the academic assignment.",
+     "role": "item"
+    },
+    {
+     "id": "s13-b05",
+     "shape": "TextBox 9",
+     "para": 0,
+     "top": 2514600,
+     "left": 1051560,
+     "text": "Before submission, add current local photographs and confirm the latest statistics and scheme details from official sources.",
+     "role": "item"
+    },
+    {
+     "id": "s13-b06",
+     "shape": "TextBox 11",
+     "para": 0,
+     "top": 3383280,
+     "left": 1051560,
+     "text": "Include any field-survey observations required by the teacher.",
+     "role": "item"
+    },
+    {
+     "id": "s13-b07",
+     "shape": "TextBox 13",
+     "para": 0,
+     "top": 4251960,
+     "left": 1051560,
+     "text": "Student remarks / field observations: ______________________________________________",
+     "role": "item"
+    }
+   ],
+   "images": []
+  }
+ ]
+}

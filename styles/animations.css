@@ -1,0 +1,27 @@
+/* Level A — slide transitions */
+.slide{opacity:0;visibility:hidden;transform:translateX(var(--from));transition:opacity var(--t-slide) var(--ease),transform var(--t-slide) var(--ease),visibility 0s linear var(--t-slide)}
+.slide.is-active{opacity:1;visibility:visible;transform:none;transition-delay:0s;z-index:2}
+.slide.is-leaving{opacity:0;visibility:visible;transform:translateX(calc(var(--from) * -.5));z-index:1}
+/* Level B — content entrance (only when JS is running; text is never hidden without JS) */
+.js .slide [data-r]{opacity:0;transform:translateY(14px)}
+.js .slide.is-active [data-r]{opacity:1;transform:none;transition:opacity var(--t-reveal) var(--ease),transform var(--t-reveal) var(--ease);transition-delay:calc(120ms + var(--i,0) * var(--stagger))}
+.js .slide.is-leaving [data-r]{opacity:1;transform:none}
+.js .slide .rule{transform:scaleX(0)}
+.js .slide.is-active .rule{transform:none;transition:transform 700ms var(--ease) 250ms}
+.js .slide.is-leaving .rule{transform:none}
+.js .s-close.is-active .c-body{transition-duration:700ms}
+/* decorative line drawing (one-shot per visit) */
+.draw path{stroke-dasharray:1;stroke-dashoffset:0}
+.slide.is-active .draw path{animation:draw 2.4s var(--ease) both}
+.slide.is-active .draw path:nth-child(2n){animation-delay:.12s}.slide.is-active .draw path:nth-child(3n){animation-delay:.24s}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.river .draw path{animation-duration:3s}
+/* reduced motion */
+@media (prefers-reduced-motion:reduce){
+  .slide,.slide.is-active,.slide.is-leaving{transform:none;transition:opacity 160ms linear,visibility 0s linear 160ms}
+  .slide.is-active{transition-delay:0s}
+  .js .slide [data-r],.js .slide.is-active [data-r]{transform:none;transition:opacity 160ms linear;transition-delay:0s}
+  .js .slide .rule,.js .slide.is-active .rule{transform:none;transition:none}
+  .slide.is-active .draw path{animation:none}
+  .progress i,.overview,.ix,.ctl{transition:none}
+}

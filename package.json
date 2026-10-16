@@ -1,0 +1,4 @@
+{ "name": "chhattisgarh-interactive-report", "version": "1.0.0", "private": true,
+  "description": "Interactive HTML / PPTX / PDF redesign of the Chhattisgarh Formal Survey Report",
+  "scripts": { "serve": "python3 -m http.server 8000", "build": "bash tools/build_all.sh", "test": "python3 tools/validate_content.py && python3 tools/test_interactions.py" },
+  "dependencies": { "pptxgenjs": "^3.12.0" } }

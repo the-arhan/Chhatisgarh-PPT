@@ -1,0 +1,44 @@
+@media screen and (max-width:1100px){
+  .grid-amen{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid-amen .card,.grid-amen .card:nth-child(n+4){grid-column:span 1}
+  .grid-amen .card.note{grid-column:1/-1}
+  .close-grid{grid-template-columns:1fr}.close-body{justify-self:start}
+}
+@media screen and (max-width:900px){
+  .cover-grid{grid-template-columns:1fr;gap:var(--sp-4);align-items:start}
+  .cover-art{width:90vw;right:-30%}
+  .index-grid{grid-template-columns:1fr;gap:var(--sp-3);align-content:start}
+  .ix-list{grid-template-columns:1fr;grid-template-rows:none;grid-auto-flow:row}
+  .frame-rail .frame{grid-template-columns:minmax(0,1fr)}
+  .hero{font-size:clamp(2.2rem,9.6vw,5.4rem)}
+  .rail{gap:var(--sp-3);background-size:160% auto;background-position:right -50% bottom -30%}
+  .rail::before{font-size:6rem}
+  .rail .foot{order:2}
+  .grid-2,.grid-tech,.grid-rec{grid-template-columns:1fr;grid-template-rows:none;grid-auto-flow:row}
+  .grid-tech .card:nth-child(n){grid-column:1}
+  .top-head{flex-direction:column;align-items:flex-start}.top-head .foot{text-align:left}
+  .habitat .stmts{padding-right:0}.river{opacity:.35}
+  .slide-foot{position:static;padding:0 var(--pad) var(--pad)}
+}
+@media screen and (max-width:600px){
+  :root{--chrome-h:3.2rem}
+  .chrome .lbl{display:none}
+  .grid-amen{grid-template-columns:1fr}
+  .chrome-c{gap:.2rem}
+  .ctl{min-width:2.75rem;height:2.75rem}
+  .ix{grid-template-columns:2.4rem 1fr;padding:var(--sp-2) .5rem}
+}
+@media screen and (max-height:520px) and (orientation:landscape){:root{--chrome-h:2.8rem}.ctl{height:2.2rem}}
+/* print / PDF — each slide becomes one 16:9 page; no controls */
+@page{size:13.333in 7.5in;margin:0}
+@media print{
+  html,body{height:auto;overflow:visible;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .chrome,.overview,.scrim,.skip,.annot{display:none!important}
+  .deck{position:static;overflow:visible;inset:auto}
+  .slide{position:relative!important;inset:auto!important;width:13.333in;height:7.5in;overflow:hidden!important;opacity:1!important;visibility:visible!important;transform:none!important;transition:none!important;break-after:page;page-break-after:always;--fs-body:1.28rem;--fs-lead:1.8rem;--fs-title:2.4rem;--fs-hero:5.3rem;--fs-small:1rem;--fs-meta:.85rem;--pad:.5in}
+  .slide:last-child{break-after:auto;page-break-after:auto}
+  .slide [data-r],.slide .rule{opacity:1!important;transform:none!important;transition:none!important}
+  .draw path{animation:none!important}
+  .frame,.cover-grid,.index-grid,.close-grid{min-height:7.5in}
+  .frame-rail .frame{grid-template-columns:4.6in 1fr}.grid-rec{--fs-body:1.12rem}
+}

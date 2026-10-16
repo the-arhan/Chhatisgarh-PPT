@@ -1,0 +1,34 @@
+{
+ "source_slides": 13,
+ "text_blocks_counted": 97,
+ "source_vs_manifest": {
+  "source_paragraphs": 97,
+  "manifest_blocks": 97,
+  "identical_in_order": true
+ },
+ "html": {
+  "sections": 13,
+  "verified": 97,
+  "missing": [],
+  "altered": [],
+  "duplicated": []
+ },
+ "pptx": {
+  "slides": 13,
+  "verified": 97,
+  "missing_or_altered": [],
+  "non_picture_shapes_outside_slide": [],
+  "picture_shapes": 14
+ },
+ "pdf": {
+  "pages": 13,
+  "verified": 97,
+  "missing_or_altered": []
+ },
+ "images": {
+  "original_assets_counted": 0,
+  "reused": 0,
+  "missing_or_replaced": 0,
+  "note": "Source contains no photographs; none added."
+ }
+}
