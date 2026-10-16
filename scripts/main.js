@@ -27,6 +27,8 @@
   $("btn-prev").addEventListener("click", D.nav.prev);
   $("btn-next").addEventListener("click", D.nav.next);
   $("btn-home").addEventListener("click", D.nav.first);
+  const btnPlay = $("btn-play");
+  if (btnPlay) btnPlay.addEventListener("click", D.nav.toggleAutoplay);
   $("btn-full").addEventListener("click", D.nav.toggleFullscreen);
   $("btn-print").addEventListener("click", () => window.print());
   drawer.addEventListener("keydown", (e) => {            // keep Tab inside the open drawer

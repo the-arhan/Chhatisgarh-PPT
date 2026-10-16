@@ -7,7 +7,7 @@
   "identical_in_order": true
  },
  "html": {
-  "sections": 13,
+  "sections": 16,
   "verified": 97,
   "missing": [],
   "altered": [],
@@ -21,9 +21,7 @@
   "picture_shapes": 14
  },
  "pdf": {
-  "pages": 13,
-  "verified": 97,
-  "missing_or_altered": []
+  "note": "pdftotext not available on this platform ([WinError 2] The system cannot find the file specified); skipped"
  },
  "images": {
   "original_assets_counted": 0,

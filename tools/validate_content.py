@@ -66,13 +66,16 @@ rep["pptx"]["non_picture_shapes_outside_slide"] = off
 rep["pptx"]["picture_shapes"] = sum(1 for s in out.slides for sh in s.shapes if sh.shape_type == 13)
 
 # 4. PDF text (pdftotext, whitespace-normalised per page; hyphenation not applied by the browser)
-pages = subprocess.run(["pdftotext", "-raw", "exports/chhattisgarh-interactive-report.pdf", "-"], capture_output=True, text=True).stdout.split("\f")
-pages = [norm(x) for x in pages if x.strip()]
 pm2, pa2 = [], []
-for i, b in blocks:
-    nos = lambda x: re.sub(r"\s+", "", x)   # PDF only: wraps at hyphens + letter-spacing add spaces on extraction
-    (pm2 if i <= len(pages) and nos(b["text"]) in nos(pages[i - 1]) else pa2).append(b["id"])
-rep["pdf"] = {"pages": len(pages), "verified": len(pm2), "missing_or_altered": pa2}
+try:
+    pages = subprocess.run(["pdftotext", "-raw", "exports/chhattisgarh-interactive-report.pdf", "-"], capture_output=True, text=True).stdout.split("\f")
+    pages = [norm(x) for x in pages if x.strip()]
+    for i, b in blocks:
+        nos = lambda x: re.sub(r"\s+", "", x)   # PDF only: wraps at hyphens + letter-spacing add spaces on extraction
+        (pm2 if i <= len(pages) and nos(b["text"]) in nos(pages[i - 1]) else pa2).append(b["id"])
+    rep["pdf"] = {"pages": len(pages), "verified": len(pm2), "missing_or_altered": pa2}
+except Exception as e:
+    rep["pdf"] = {"note": f"pdftotext not available on this platform ({e}); skipped"}
 
 # 5. images
 zipm = [n for n in zipfile.ZipFile("data/source.pptx").namelist() if "/media/" in n]

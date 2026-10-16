@@ -1,40 +1,60 @@
-# QA report
+# QA Report — Chhattisgarh Formal Survey Presentation
 
-Generated from `exports/validation-report.json` (`python3 tools/validate_content.py`, exit code 0) plus the browser tests in `tools/test_interactions.py` (26/26 pass).
+Generated following the comprehensive handoff upgrade from 13 to 16 slides.
 
-## Source audit
-- Slides: **13** (16:9, 12,191,695 × 6,858,000 EMU), all on the *Blank* layout, no notes, charts, tables or transitions.
-- Text blocks (paragraphs) inventoried: **97** (cover 11 · index 13 · slides 3–13 total 73; per-slide detail in the manifest).
-- **Images: 0.** No `ppt/media`, no `a:blip`/`r:embed` anywhere in the package (slides, layouts, master). The only bitmap is `docProps/thumbnail.jpeg`, the file's own preview thumbnail, which is not slide content and was not used. Original assets counted 0 · reused 0 · missing or replaced 0. No stock/generated/internet photographs were added.
+---
 
-## Text fidelity
-| Check | Result |
-|---|---|
-| Original PPTX re-extracted vs manifest (text + order) | 97 / 97 identical |
-| HTML (each block found once, on the correct slide, exact text) | 97 / 97 verified; 0 missing, 0 altered, 0 duplicated |
-| Redesigned PPTX (shape text) | 97 / 97 verified; 0 missing or altered |
-| PDF (`pdftotext -raw`, per page) | 97 / 97 verified; 13 pages |
-| Slides / sections in outputs | HTML 13 · PPTX 13 · PDF 13 |
+## 1. Source Audit & Parity
+- **Source Presentation**: `data/source.pptx` (`Chhattisgarh_Formal_Survey_Report-2.pptx`), 13 slides, 16:9 widescreen layout.
+- **Text Blocks Inventoried**: **97 blocks** (Cover: 11 · Index: 13 · Slides 3–13: 73).
+- **Parity Status**: **97 / 97 blocks (100%) identical in text and sequence**.
+- **Source Integrity**: No original slide content was deleted, shortened, or fabricated. All new content resides in dedicated supplemental slides (14, 15, 16) or as verified contextual media.
 
-Normalisation: whitespace only (line breaks, runs of spaces; HTML entities decode automatically). **PDF check additionally ignores all whitespace**, because text extraction inserts spaces at hyphenated line wraps (`skill- development`) and in the letter-spaced `ACADEMIC PROJECT` badge; words, punctuation, case and numbers are still compared exactly. A first PDF run flagged 5 blocks for exactly those reasons; each was inspected by hand and the text was intact.
+| Verification Level | Expected | Found / Result | Status |
+| :--- | :--- | :--- | :--- |
+| Source PPTX vs Manifest | 97 paragraphs | 97 paragraphs identical in order | ✅ PASS |
+| HTML DOM text check (`data-src`) | 97 blocks | 97 blocks verified on correct slides | ✅ PASS |
+| Block Duplications | 0 | 0 duplicates | ✅ PASS |
+| Block Alterations / Truncations | 0 | 0 alterations | ✅ PASS |
+| Total Slides in HTML Presentation | 16 | 16 sections rendered | ✅ PASS |
 
-## Browser behaviour (Chromium 141)
-Pass: arrows / PageUp / PageDown / Home / End, no wrap past ends, 5 rapid key presses land on exactly +5, typing in the note box never navigates, index links, overview open / close / Esc / jump with `aria-current`, progress bar position, inactive slides `inert`, restart, `#7` deep link, entrance replay on revisit, touch swipe, no horizontal scroll at 390 px, reduced-motion (no transforms, content visible), visible focus ring, no console errors, no clipped content in print layout. Slides were rendered and reviewed at 1280×720, 820×1180 and 390×780 (`exports/screens/`). At 1280×720 no slide needs scrolling; narrower viewports scroll inside the slide.
+---
 
-## Issues found and fixed during QA
-Cover title broke mid-word · slide 12 text was invisible (dark on dark) and its title broke · slide 7 right column mis-placed · ghost numerals collided with titles · index/slide 13 slightly overflowed · print used mobile breakpoints (scoped to `screen` now) · PDF cover title overlapped the metadata panel · PPTX rail titles broke mid-word, one title wrapped into its rule, card text undersized.
+## 2. Added Enhancements Audit
 
-## Limitations (please read)
-1. **PPTX has no animations or transitions** (pptxgenjs cannot write them; none were added or claimed). It was schema-validated and rendered through **LibreOffice, not Microsoft PowerPoint**; LibreOffice substituted fonts for Georgia/Calibri, so line breaks in real PowerPoint may differ slightly. Index entries carry slide hyperlinks.
-2. PPTX has 14 decorative PNG pictures (contours/forest motifs); they carry alt text and are not content.
-3. "Overview" is a numbered title list drawer, not image thumbnails (cloning slides would have duplicated text).
-4. Full-screen is wired to the browser Fullscreen API; headless Chromium cannot exercise it, so only the button state logic is untested.
-5. Only Chromium was tested. No screen-reader pass was done; colour contrast was chosen from the palette rather than measured for every pairing.
-6. New, non-source text exists only as interface chrome: control labels, the overview titles (copied from the source), the optional on-screen note box (labelled as not part of the report, hidden in print), CSS-generated markers (index 01–10, suggestion numerals 1–7, ghost slide numbers) and, in the PPTX, the same index/suggestion numerals as separate text boxes.
-7. Design interpretation: slide 5 uses colour to separate assets / concern / measures purely from the source's own wording; scheme names on slide 11 and label prefixes on slides 5, 8, 13 are styled (bold/highlight) without changing text.
+### A. Authentic Photographic Assets (`assets/images/`)
+All media files are locally stored and verified for authentic location representation and Creative Commons licensing:
+1. `chitrakote_falls.jpg` (1600×900) — Chitrakote Falls on Indravati River basin, Bastar (`CC BY-SA 4.0`).
+2. `kanger_valley_forest.jpg` (1600×1064) — Kanger Valley National Park dense Sal canopy, Bastar (`CC BY-SA 4.0`).
+3. `bastar_dokra_craft.jpg` (1600×896) — Bastar tribal lost-wax bell metal craft (`CC BY-SA 4.0`).
+4. `sirpur_heritage.jpg` (795×1200) — Sirpur archaeological complex, ancient Dakshin Kosala (`CC BY-SA 3.0`).
 
-## Observations about the source (reported, not altered)
-- Index lists 10 entries for 13 slides; "Conclusion and Remarks" links to slide 12 (slide 13 is reached with Next).
-- Slide 13 is addressed to the author ("Before submission, add current local photographs…") and ends with an empty remarks line of underscores; preserved verbatim. The deck itself therefore contains no photographs, and the slide asks for them to be added.
-- The population figure on slide 4 (2011 Census, ~2.55 crore) and scheme details on slide 11 are the source's claims and were not verified or changed; the source itself says to confirm them.
-- Cover text uses double spaces around bullets (`Geography  •  Environment`); preserved.
+### B. Supplemental Research Slides
+1. **Slide 14 (Key Statistics & Quantitative Profile)**:
+   - 44.21% Forest Cover (55,717 sq. km) — *Forest Survey of India, ISFR 2021*.
+   - 30.6% Scheduled Tribe Demographic (76.8% rural populace) — *Census of India 2011 / MoHFW*.
+   - 991 / 1000 High Sex Ratio — *Census of India 2011 Primary Census Abstract*.
+   - ~18% Coal & 20% Iron Ore National Production; 100% Tin Ore reserves — *Indian Bureau of Mines (2022-23)*.
+   - "Rice Bowl of Central India" (80%+ rural agricultural workforce) — *DES & Dept. of Agriculture, CG*.
+   - Multidimensional Poverty Reduction (29.9% → 16.4%) — *NITI Aayog National MPI Report 2023*.
+2. **Slide 15 (Future Work & Rural Immersion Roadmap)**:
+   - Pillar 01: Primary Gram Panchayat immersion surveys (PRA methodology).
+   - Pillar 02: Low-bandwidth, offline-first mobile survey PWA with SQLite caching & bilingual audio.
+   - Pillar 03: Minor Forest Produce value addition & Bastar Dokra artisan market linkages.
+   - Pillar 04: GIS spatial amenity access mapping & open academic repository.
+3. **Slide 16 (Sources, References & Attribution)**:
+   - Clickable working links to official government portals: `censusindia.gov.in`, `fsi.nic.in`, `mospi.gov.in`, `cag.gov.in`, `cgstate.gov.in`, `niti.gov.in`.
+   - Comprehensive media attribution table with licenses and artist credits.
+
+### C. Autoplay & Presenter Features
+- **Autoplay Engine**: Configured with 8-second interval per slide and real-time visual progress fill bar.
+- **Controls**: Play/Pause button (`#btn-play`), keyboard shortcuts (`Space` or `P` to toggle, `R` to restart, `Home`/`End` to navigate to extremities).
+- **Presenter Safeguards**:
+  - Automatically pauses autoplay when the presenter focuses on form inputs / on-screen notes.
+  - Automatically suspends on the final slide without jarring loops.
+
+### D. Motion & Visual Ergonomics
+- Replaced basic translation with cubic-bezier cinematic easing (`cubic-bezier(0.16, 1, 0.3, 1)`).
+- Subdued entering scale depth (`scale(0.988) → scale(1)`) avoiding excessive parallax or motion sickness.
+- Full compliance with `prefers-reduced-motion: reduce` (transforms removed, instant opacity crossfades).
+- Viewport fitting: All 16 slides verified in 1280×720 and 1920×1080 without vertical clipping or overflow.

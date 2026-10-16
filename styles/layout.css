@@ -45,7 +45,8 @@
 /* ---------- top frame ---------- */
 .frame-top{background:var(--ivory)}
 .frame-top .frame{display:flex;flex-direction:column}
-.top-head{background:var(--forest) url("../assets/graphics/contours-gold.svg") no-repeat right 4% center/auto 260%;color:var(--ivory);padding:var(--pad);padding-bottom:calc(var(--pad) * .85);display:flex;justify-content:space-between;align-items:flex-end;gap:var(--sp-3);overflow:hidden}
+.top-head{background:var(--forest) url("../assets/graphics/contours-gold.svg") no-repeat right 4% center/auto 260%;color:var(--ivory);padding:var(--sp-3) var(--pad);display:flex;justify-content:space-between;align-items:flex-end;gap:var(--sp-3);overflow:hidden}
+.top-head .sub{color:var(--gold);font-size:var(--fs-lead);margin-top:.25rem}
 .top-head .foot{color:var(--sage);text-align:right;flex:none}
 .grid{display:grid;gap:var(--sp-3);padding:var(--pad);flex:1;align-content:center}
 .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}

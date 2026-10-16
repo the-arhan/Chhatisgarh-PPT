@@ -1,27 +1,153 @@
-/* Level A — slide transitions */
-.slide{opacity:0;visibility:hidden;transform:translateX(var(--from));transition:opacity var(--t-slide) var(--ease),transform var(--t-slide) var(--ease),visibility 0s linear var(--t-slide)}
-.slide.is-active{opacity:1;visibility:visible;transform:none;transition-delay:0s;z-index:2}
-.slide.is-leaving{opacity:0;visibility:visible;transform:translateX(calc(var(--from) * -.5));z-index:1}
+/* Level A — cinematic slide transitions */
+.slide {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(var(--from)) scale(.988);
+  transition: opacity var(--t-slide) var(--ease-cinematic), transform var(--t-slide) var(--ease-cinematic), visibility 0s linear var(--t-slide)
+}
+
+.slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0) scale(1);
+  transition-delay: 0s;
+  z-index: 2
+}
+
+.slide.is-leaving {
+  opacity: 0;
+  visibility: visible;
+  transform: translateX(calc(var(--from) * -.42)) scale(1.008);
+  z-index: 1
+}
+
 /* Level B — content entrance (only when JS is running; text is never hidden without JS) */
-.js .slide [data-r]{opacity:0;transform:translateY(14px)}
-.js .slide.is-active [data-r]{opacity:1;transform:none;transition:opacity var(--t-reveal) var(--ease),transform var(--t-reveal) var(--ease);transition-delay:calc(120ms + var(--i,0) * var(--stagger))}
-.js .slide.is-leaving [data-r]{opacity:1;transform:none}
-.js .slide .rule{transform:scaleX(0)}
-.js .slide.is-active .rule{transform:none;transition:transform 700ms var(--ease) 250ms}
-.js .slide.is-leaving .rule{transform:none}
-.js .s-close.is-active .c-body{transition-duration:700ms}
+.js .slide [data-r] {
+  opacity: 0;
+  transform: translateY(16px)
+}
+
+.js .slide.is-active [data-r] {
+  opacity: 1;
+  transform: none;
+  transition: opacity var(--t-reveal) var(--ease-cinematic), transform var(--t-reveal) var(--ease-cinematic);
+  transition-delay: calc(100ms + var(--i, 0) * var(--stagger))
+}
+
+.js .slide.is-leaving [data-r] {
+  opacity: 1;
+  transform: none
+}
+
+.js .slide .rule {
+  transform: scaleX(0)
+}
+
+.js .slide.is-active .rule {
+  transform: none;
+  transition: transform 680ms var(--ease-cinematic) 220ms
+}
+
+.js .slide.is-leaving .rule {
+  transform: none
+}
+
+.js .s-close.is-active .c-body {
+  transition-duration: 700ms
+}
+
+/* Card and media reveals */
+.js .photo-card img,
+.js .photo-thumb img {
+  transition: transform 420ms var(--ease-cinematic), filter 420ms var(--ease-cinematic)
+}
+
+.photo-card:hover img,
+.photo-thumb:hover img {
+  transform: scale(1.03)
+}
+
 /* decorative line drawing (one-shot per visit) */
-.draw path{stroke-dasharray:1;stroke-dashoffset:0}
-.slide.is-active .draw path{animation:draw 2.4s var(--ease) both}
-.slide.is-active .draw path:nth-child(2n){animation-delay:.12s}.slide.is-active .draw path:nth-child(3n){animation-delay:.24s}
-@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
-.river .draw path{animation-duration:3s}
+.draw path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0
+}
+
+.slide.is-active .draw path {
+  animation: draw 2.4s var(--ease) both
+}
+
+.slide.is-active .draw path:nth-child(2n) {
+  animation-delay: .12s
+}
+
+.slide.is-active .draw path:nth-child(3n) {
+  animation-delay: .24s
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1
+  }
+
+  to {
+    stroke-dashoffset: 0
+  }
+}
+
+.river .draw path {
+  animation-duration: 3s
+}
+
+/* autoplay progress ring */
+@keyframes spin {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
 /* reduced motion */
-@media (prefers-reduced-motion:reduce){
-  .slide,.slide.is-active,.slide.is-leaving{transform:none;transition:opacity 160ms linear,visibility 0s linear 160ms}
-  .slide.is-active{transition-delay:0s}
-  .js .slide [data-r],.js .slide.is-active [data-r]{transform:none;transition:opacity 160ms linear;transition-delay:0s}
-  .js .slide .rule,.js .slide.is-active .rule{transform:none;transition:none}
-  .slide.is-active .draw path{animation:none}
-  .progress i,.overview,.ix,.ctl{transition:none}
+@media (prefers-reduced-motion:reduce) {
+
+  .slide,
+  .slide.is-active,
+  .slide.is-leaving {
+    transform: none;
+    transition: opacity 160ms linear, visibility 0s linear 160ms
+  }
+
+  .slide.is-active {
+    transition-delay: 0s
+  }
+
+  .js .slide [data-r],
+  .js .slide.is-active [data-r] {
+    transform: none;
+    transition: opacity 160ms linear;
+    transition-delay: 0s
+  }
+
+  .js .slide .rule,
+  .js .slide.is-active .rule {
+    transform: none;
+    transition: none
+  }
+
+  .slide.is-active .draw path {
+    animation: none
+  }
+
+  .progress i,
+  .overview,
+  .ix,
+  .ctl,
+  .photo-card img,
+  .photo-thumb img {
+    transition: none
+  }
+
+  .photo-card:hover img,
+  .photo-thumb:hover img {
+    transform: none
+  }
 }
