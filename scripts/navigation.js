@@ -94,6 +94,7 @@
   function go(i, opts = {}) {
     i = clamp(i);
     if (i === cur) return false;
+    if (D.explorer) D.explorer.close({ restoreFocus: false });
     const dir = i > cur ? 1 : -1;
     const prev = slides[cur] || null;
     cur = i;
@@ -130,7 +131,12 @@
   document.addEventListener("keydown", (e) => {
     if (e.defaultPrevented || e.ctrlKey || e.metaKey || e.altKey || isTyping(e.target)) return;
     const k = e.key;
-    if (k === "Escape") { if (D.overview && D.overview.isOpen()) { D.overview.close(); e.preventDefault(); } return; }
+    if (k === " " && e.target.closest("button, a, [role='button']")) return;
+    if (k === "Escape") {
+      if (D.explorer && D.explorer.isOpen()) { D.explorer.close(); e.preventDefault(); return; }
+      if (D.overview && D.overview.isOpen()) { D.overview.close(); e.preventDefault(); }
+      return;
+    }
     const map = { ArrowRight: D.nav.next, PageDown: D.nav.next, ArrowLeft: D.nav.prev, PageUp: D.nav.prev, Home: D.nav.first, End: D.nav.last };
     if (map[k]) { e.preventDefault(); map[k](); return; }
     if (k === "f" || k === "F") { e.preventDefault(); D.nav.toggleFullscreen(); }
@@ -169,3 +175,4 @@
 
   D.nav.init = () => { slides.forEach((s) => { s.inert = true; s.setAttribute("aria-hidden", "true"); }); go(fromHash(), { silent: true }); };
 })();
+

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Raipur city illustration</title>
+  <desc id="desc">A warm-toned stylized cityscape with a central civic tower, buildings, trees and a road.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9e6dc"/>
+      <stop offset="1" stop-color="#f6f2e9"/>
+    </linearGradient>
+    <linearGradient id="sunset" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0bd7f"/>
+      <stop offset="1" stop-color="#b96548"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#sky)"/>
+  <circle cx="760" cy="112" r="48" fill="#c3a56b" opacity=".8"/>
+  <path d="M0 338c145-54 244-21 374-40 145-21 246-68 586-5v247H0z" fill="#d6dfcf"/>
+  <path d="M0 396h960v144H0z" fill="#173d32"/>
+  <path d="M0 434h960v106H0z" fill="#21513f"/>
+  <g fill="#f6f2e9" stroke="#173d32" stroke-width="5" stroke-linejoin="round">
+    <path d="M78 395V251h90v144z"/><path d="M95 275h56v28H95z" fill="#c3a56b"/>
+    <path d="M188 395V207h116v188z"/><path d="M208 230h26v35h-26zm48 0h26v35h-26zm-48 58h26v35h-26zm48 0h26v35h-26z" fill="#a7b6a0"/>
+    <path d="M329 395V170h125v225z"/><path d="M350 195h30v34h-30zm52 0h30v34h-30zm-52 58h30v34h-30zm52 0h30v34h-30zm-52 58h30v34h-30zm52 0h30v34h-30z" fill="#a7b6a0"/>
+    <path d="M478 395V235h102v160z"/><path d="M498 255h25v30h-25zm43 0h25v30h-25zm-43 54h25v30h-25zm43 0h25v30h-25z" fill="#c3a56b"/>
+    <path d="M604 395V195h118v200z"/><path d="M624 218h28v35h-28zm50 0h28v35h-28zm-50 58h28v35h-28zm50 0h28v35h-28z" fill="#a7b6a0"/>
+    <path d="M748 395V267h91v128z"/><path d="M765 287h24v28h-24zm41 0h24v28h-24zm-41 47h24v28h-24zm41 0h24v28h-24z" fill="#c3a56b"/>
+  </g>
+  <g>
+    <path d="M410 171V90h24v81" fill="#b96548" stroke="#173d32" stroke-width="5"/>
+    <path d="M397 94h50l-25-35z" fill="url(#sunset)" stroke="#173d32" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="422" cy="127" r="13" fill="#f6f2e9" stroke="#173d32" stroke-width="4"/>
+    <path d="M422 114v13l8 5" fill="none" stroke="#173d32" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g fill="#c3a56b" stroke="#173d32" stroke-width="4">
+    <path d="M31 400c0-27 20-48 43-48s43 21 43 48z"/><path d="M846 400c0-30 22-54 49-54s49 24 49 54z"/>
+  </g>
+  <path d="M390 540l70-106h40l70 106" fill="#303b37"/>
+  <path d="M477 540l-8-44h18l-4 44m-3-77-4-22h8l-2 22" fill="#f6f2e9" opacity=".9"/>
+  <path d="M0 395h960" stroke="#c3a56b" stroke-width="6"/>
+  <text x="52" y="492" fill="#f6f2e9" font-family="Georgia,serif" font-size="34" letter-spacing="2">RAIPUR</text>
+</svg>

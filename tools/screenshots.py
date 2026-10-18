@@ -11,7 +11,8 @@ with sync_playwright() as p:
     pg.on("pageerror", lambda e: errs.append(str(e)))
     pg.goto(url); pg.wait_for_timeout(500)
     print("validate:", json.dumps(pg.evaluate("Deck.validate()")))
-    for n in range(1, 14):
+    total = pg.locator(".slide").count()
+    for n in range(1, total + 1):
         pg.evaluate(f"Deck.nav.go({n-1})"); pg.wait_for_timeout(1500 if n in (1, 12) else 1100)
         o = pg.evaluate(f"(()=>{{const s=document.getElementById('slide-{n}');return [s.scrollHeight,s.clientHeight,s.scrollWidth,s.clientWidth]}})()")
         flag = "SCROLLS" if o[0] > o[1] + 2 else "fits"

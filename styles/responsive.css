@@ -26,6 +26,12 @@
 }
 
 @media screen and (max-width:900px) {
+  .mpi-wrap{grid-template-columns:1fr;gap:1rem;padding:1rem}
+  .mpi-chart{padding:1rem}
+  .mpi-note{font-size:.92rem}
+  .mpi-legend{margin-bottom:1rem}
+  .mpi-row{margin:.85rem 0;grid-template-columns:4rem minmax(0,1fr);gap:.55rem}
+  .mpi-axis{margin-left:4.55rem}
   .cover-grid {
     grid-template-columns: 1fr;
     gap: var(--sp-4);
@@ -173,6 +179,7 @@
 
   .chrome,
   .overview,
+  .explorer-card,
   .scrim,
   .skip,
   .annot {

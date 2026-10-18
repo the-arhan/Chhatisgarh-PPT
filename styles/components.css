@@ -765,7 +765,33 @@ mark.scheme {
     font-style: italic;
 }
 
-/* ==================== FUTURE WORK ROADMAP (SLIDE 15) ==================== */
+#slide-14 .stats-grid{gap:.65rem;padding-block:.65rem}
+#slide-14 .stat-card{padding:.65rem .85rem}
+#slide-14 .stat-tag{margin-bottom:.15rem}
+#slide-14 .stat-val{font-size:clamp(1.4rem,1rem + 1vw,2rem);margin-bottom:.2rem}
+#slide-14 .stat-desc{font-size:.82rem;line-height:1.3}
+#slide-14 .stat-src{margin-top:.3rem;padding-top:.25rem}
+
+/* ==================== RURAL / URBAN MPI COMPARISON (SLIDE 15) ==================== */
+.mpi-wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(16rem,.8fr);gap:clamp(1.5rem,4vw,4rem);align-items:center;padding:var(--pad);flex:1;max-width:90rem;margin:0 auto;width:100%;box-sizing:border-box}
+.mpi-chart{padding:1.5rem 1.75rem;background:var(--paper);box-shadow:var(--shadow-card);border-top:4px solid var(--forest)}
+.mpi-legend{display:flex;gap:1.4rem;justify-content:flex-end;margin-bottom:2.1rem;font-size:var(--fs-small);color:var(--slate)}
+.mpi-legend span{display:inline-flex;align-items:center;gap:.45rem}
+.mpi-swatch{display:inline-block;width:.8rem;height:.8rem;background:var(--clay);border-radius:50%}
+.mpi-swatch.recent{background:var(--forest)}
+.mpi-row{display:grid;grid-template-columns:5rem minmax(0,1fr);gap:1rem;align-items:center;margin:1.5rem 0}
+.mpi-row>b{font-family:var(--font-display);font-size:1.35rem;color:var(--forest)}
+.mpi-bars{display:grid;gap:.55rem;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(25% - 1px),rgba(23,61,50,.13) calc(25% - 1px),rgba(23,61,50,.13) 25%)}
+.mpi-bar{height:2.6rem;width:var(--value);min-width:4rem;display:flex;align-items:center;justify-content:flex-end;padding-right:.6rem;box-sizing:border-box;color:white;font-size:.9rem;font-weight:600;border-radius:0 3px 3px 0}
+.mpi-bar.old{background:var(--clay)}
+.mpi-bar.recent{background:var(--forest)}
+.mpi-axis{display:flex;justify-content:space-between;margin-left:6rem;padding-top:.45rem;border-top:1px solid var(--rule);font-size:var(--fs-meta);color:var(--ink-soft)}
+.mpi-note{border-left:3px solid var(--gold);padding-left:1.2rem;color:var(--slate);font-size:var(--fs-body);line-height:1.45}
+.mpi-note p{margin:.5rem 0 1rem}
+.mpi-note .mpi-kicker{font-size:var(--fs-meta);font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--clay-ink)}
+.mpi-note .mpi-source{font-size:var(--fs-meta);color:var(--ink-soft);padding-top:.6rem;border-top:1px solid var(--rule)}
+
+/* ==================== FUTURE WORK ROADMAP (SLIDE 16) ==================== */
 .future-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -863,7 +889,13 @@ mark.scheme {
     align-self: flex-start;
 }
 
-/* ==================== SOURCES & REFERENCES (SLIDE 16) ==================== */
+#slide-16 .future-grid{gap:.65rem;padding-block:.5rem}
+#slide-16 .future-card{padding:.65rem .85rem}
+#slide-16 .future-title{margin:.1rem 0 .25rem}
+#slide-16 .future-list{font-size:.78rem;line-height:1.26;gap:.14rem}
+#slide-16 .future-badge{margin-top:.25rem}
+
+/* ==================== SOURCES & REFERENCES (SLIDE 17) ==================== */
 .ref-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -916,6 +948,11 @@ mark.scheme {
     color: var(--forest);
 }
 
+#slide-17 .ref-grid{gap:.65rem;padding-block:.5rem}
+#slide-17 .ref-card{padding:.6rem .75rem;gap:.12rem}
+#slide-17 .ref-card h3{margin-bottom:.1rem;font-size:1.08rem}
+#slide-17 .ref-item{padding:.18rem .35rem;font-size:.76rem;line-height:1.24}
+
 .ref-item b {
     display: block;
     color: var(--forest);
@@ -939,4 +976,132 @@ mark.scheme {
     border-radius: 2px;
     font-weight: 600;
     margin-left: .35rem;
+}
+
+/* Clickable concepts open the reusable, non-modal context card. */
+.concept {
+    display: inline;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    color: var(--clay-ink);
+    font: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 1px;
+    text-underline-offset: .18em;
+    cursor: pointer;
+}
+
+.concept:hover {
+    color: var(--forest);
+    text-decoration-thickness: 2px;
+}
+
+.concept:focus-visible {
+    outline: 2px solid var(--clay);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.s-cover .concept,
+.photo-card-meta .concept,
+.photo-thumb figcaption .concept {
+    color: var(--gold);
+}
+
+.explorer-card {
+    position: fixed;
+    z-index: 50;
+    width: min(23rem, calc(100vw - 1.5rem));
+    max-height: min(34rem, calc(100dvh - var(--chrome-h) - 1.5rem));
+    overflow: auto;
+    background: var(--paper);
+    color: var(--slate);
+    border: 1px solid rgba(23, 61, 50, .2);
+    border-top: 4px solid var(--gold);
+    border-radius: 4px;
+    box-shadow: var(--shadow-elevated);
+    animation: explorer-in 180ms var(--ease-cinematic) both;
+}
+
+.explorer-card[hidden] {
+    display: none;
+}
+
+.explorer-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: var(--ivory);
+}
+
+.explorer-content {
+    padding: 1rem 1.1rem 1.1rem;
+}
+
+.explorer-kicker {
+    margin-bottom: .2rem;
+    color: var(--clay-ink);
+    font-size: var(--fs-meta);
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.explorer-content h2 {
+    margin: 0 2rem .35rem 0;
+    color: var(--forest);
+    font-family: var(--font-display);
+    font-size: 1.65rem;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.explorer-content > p:not(.explorer-kicker):not(.explorer-credit) {
+    font-size: .95rem;
+    line-height: 1.5;
+}
+
+.explorer-credit {
+    margin-top: .65rem;
+    padding-top: .5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-soft);
+    font-size: var(--fs-meta);
+}
+
+.explorer-close {
+    position: absolute;
+    z-index: 1;
+    top: .45rem;
+    right: .45rem;
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border: 1px solid rgba(16, 44, 38, .12);
+    border-radius: 50%;
+    background: var(--paper);
+    color: var(--forest);
+    font-size: 1.4rem;
+    line-height: 1;
+    box-shadow: 0 2px 8px rgba(16, 44, 38, .18);
+}
+
+.explorer-close:hover {
+    background: var(--forest);
+    color: var(--ivory);
+}
+
+@keyframes explorer-in {
+    from { opacity: 0; transform: translateY(5px) scale(.985); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .explorer-card { animation: none; }
 }

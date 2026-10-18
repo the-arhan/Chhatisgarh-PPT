@@ -56,6 +56,19 @@
 .grid-amen .card{grid-column:span 2}
 .grid-amen .card:nth-child(n+4){grid-column:span 3}
 .grid-rec{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(4,auto);grid-auto-flow:column;gap:var(--sp-2) var(--sp-4);--fs-body:clamp(1rem,.6rem + .85vw,1.38rem)}
+/* Keep the three supplemental slides inside a projector viewport. */
+#slide-14 .top-head,
+#slide-15 .top-head,
+#slide-16 .top-head,
+#slide-17 .top-head{padding-block:1rem}
+#slide-14 .top-head .ttl,
+#slide-15 .top-head .ttl,
+#slide-16 .top-head .ttl,
+#slide-17 .top-head .ttl{font-size:clamp(1.6rem,2.6vw,2.35rem)}
+#slide-14 .top-head .sub,
+#slide-15 .top-head .sub,
+#slide-16 .top-head .sub,
+#slide-17 .top-head .sub{font-size:clamp(1rem,.72rem + 1vw,1.4rem);line-height:1.2;max-width:68rem}
 /* ---------- closing ---------- */
 .close-art{left:-10%;right:auto;top:auto;bottom:-22%;width:min(95vh,70vw)}
 .close-grid{position:relative;min-height:100%;padding:var(--pad) var(--pad) calc(var(--pad) + 2.5rem);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:var(--sp-5);align-content:center;align-items:center}
