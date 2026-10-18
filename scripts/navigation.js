@@ -94,6 +94,7 @@
   function go(i, opts = {}) {
     i = clamp(i);
     if (i === cur) return false;
+    if (D.journey && D.journey.isOpen()) D.journey.close({ restoreFocus: false });
     if (D.explorer) D.explorer.close({ restoreFocus: false });
     const dir = i > cur ? 1 : -1;
     const prev = slides[cur] || null;
@@ -133,8 +134,15 @@
     const k = e.key;
     if (k === " " && e.target.closest("button, a, [role='button']")) return;
     if (k === "Escape") {
+      if (D.journey && D.journey.isOpen()) { D.journey.close(); e.preventDefault(); return; }
       if (D.explorer && D.explorer.isOpen()) { D.explorer.close(); e.preventDefault(); return; }
       if (D.overview && D.overview.isOpen()) { D.overview.close(); e.preventDefault(); }
+      return;
+    }
+    // When a place journey is active, arrow keys navigate stops within the journey
+    if (D.journey && D.journey.isOpen()) {
+      if (k === "ArrowRight" || k === "PageDown") { e.preventDefault(); D.journey.next(); return; }
+      if (k === "ArrowLeft" || k === "PageUp") { e.preventDefault(); D.journey.prev(); return; }
       return;
     }
     const map = { ArrowRight: D.nav.next, PageDown: D.nav.next, ArrowLeft: D.nav.prev, PageUp: D.nav.prev, Home: D.nav.first, End: D.nav.last };

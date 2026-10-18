@@ -7,10 +7,24 @@
   "identical_in_order": true
  },
  "html": {
-  "sections": 16,
-  "verified": 97,
-  "missing": [],
-  "altered": [],
+  "sections": 17,
+  "verified": 85,
+  "missing": [
+   "s13-b01",
+   "s13-b02",
+   "s13-b03",
+   "s13-b04",
+   "s13-b05",
+   "s13-b06",
+   "s13-b07"
+  ],
+  "altered": [
+   "s01-b06",
+   "s01-b07",
+   "s01-b08",
+   "s01-b10",
+   "s02-b03"
+  ],
   "duplicated": []
  },
  "pptx": {

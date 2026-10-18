@@ -10,22 +10,22 @@ The project folder contains no village interview notes, household survey results
 
 | Slide | Current role | Audit | Direction |
 | --- | --- | --- | --- |
-| 01 | Cover | Clear project identity; little indication that the deck is interactive. | Keep; add a brief “explore highlighted terms” cue in the next visual pass. |
+| 01 | Cover | Clear project identity; provides clear cue and keyboard affordances for exploring highlighted concepts. | Added subtle "Explore interactive concepts (✦) & curated place journeys" discovery cue with keyboard guide. |
 | 02 | Contents | Contents list stops at the 13-slide source survey. | Update navigation so the supplemental evidence and references are discoverable. |
-| 03 | Introduction | Correct orientation, but mostly broad description. | Keep as the state introduction; use Raipur and Dakshin Kosala cards for added context. |
-| 04 | Geography and population | Boundaries, landforms, river, and one dated Census number are text-only. | Add a clearly labelled orientation visual and make data years explicit. |
+| 03 | Introduction | Correct orientation, but mostly broad description. | Kept as state introduction; added interactive context cards for Raipur and Dakshin Kosala. |
+| 04 | Geography and population | Boundaries, landforms, river, and Census numbers are text-only. | Added schematic regional orientation visual (Northern Hills, Central Plains, Bastar Plateau; non-cartographic disclaimer), explicit baseline dates, and clickable concepts. |
 | 05 | Environment | Names assets and risks without a measured baseline. | Connect the forest discussion to the latest cited Forest Survey of India figure and explain its measurement. |
-| 06 | Habitat and lifestyle | The photo and location context are useful; the livelihood statements remain general. | Keep the imagery; make clear that these are statewide themes, not interview findings. |
+| 06 | Habitat and lifestyle | The photo and location context are useful; the livelihood statements remain general. | Kept imagery; added direct trigger into the 3-stop Southern Bastar place journey. |
 | 07 | Technology | Mixes existing services and future ideas. | Label proposals as proposals and connect each to a specific need. |
 | 08 | Amenities | Lists facility types but gives no access, quality, or coverage measure. | Avoid treating statewide availability as proof of equal village access. |
 | 09 | Challenges | Names plausible issues but gives little evidence or scale. | Tie claims to dated data or describe them as questions for fieldwork. |
 | 10 | Suggestions | Seven ideas are not ranked or linked to measures of success. | Match recommendations to the evidence and give each a practical outcome measure. |
 | 11 | Government schemes | Names national schemes but not outcomes in Chhattisgarh. | Keep eligibility caveats; add state-specific outcomes only when an official source is available. |
 | 12 | Conclusion | Broad conclusion appears before the supplementary evidence. | Retain as the source survey’s conclusion for now; a later reordering should put the final synthesis after the evidence. |
-| 13 | Scope and field questions | The original draft page contained pre-submission instructions and blank notes. | Replaced with a transparent evidence boundary and concrete immersion questions. |
-| 14 | Key statistics | Previously mixed years and measures; forest figure was superseded, tin resources were overstated, and one social explanation was unsupported. | Corrected figures, dated baselines, and removed unsupported interpretation. |
-| 15 | Rural/urban poverty indicators | The statewide MPI series hid the difference between rural and urban estimates. | Added paired horizontal bars for both survey periods, with scale and limitations. |
-| 16 | Future work | Useful ideas, but four pillars read as an unsequenced wish list. | Kept as a proposed plan; next improvement is a scoped pilot with outputs and review points. |
+| 13 | Scope and field questions | The original draft page contained pre-submission instructions and blank notes. | Replaced with transparent evidence boundary, concrete immersion inquiries, and direct Bastar journey launch. |
+| 14 | Key statistics | Previously mixed years and measures; forest figure was superseded, tin resources were overstated, and one social explanation was unsupported. | Corrected figures, dated baselines, linked MPI headcount context card, and removed unsupported interpretation. |
+| 15 | Rural/urban poverty indicators | Statewide MPI series hid the difference between rural and urban estimates. | Upgraded to layered interactive MPI comparison: Series toggles (All/Rural/Urban), Period filters (Both/2015-16/2019-21/Delta drop), dynamic analysis narrative, and direct trigger to inspect the 12-indicator MPI dimensions infographic. |
+| 16 | Future work | Useful ideas, but four pillars read as an unsequenced wish list. | Scoped pilot roadmap with linked Sirpur craft corridor and Dokra metalcraft context cards and Sirpur place journey. |
 | 17 | References | Previously listed useful institutions but not exact sources behind key figures. | Linked directly to reports and datasets used in the deck. |
 
 ## Recommended story
@@ -43,7 +43,10 @@ The project folder contains no village interview notes, household survey results
 - Updated forest cover to the Forest Survey of India’s 2023 state report: 55,811.75 km², or 41.28% of the state’s geographical area.
 - Corrected tin from “100% of reserves” to the Indian Bureau of Mines’ report that Chhattisgarh accounts for about 36% of national tin-ore resources. The same report gives about 20% for iron-ore resources and 18% for coal resources; these are resource shares, not production shares.
 - Removed a causal claim about the sex ratio and removed an undated 2024 population projection from a Census 2011 card.
-- Added a rural/urban multidimensional-poverty comparison from NITI Aayog’s 2023 review. The source reports 2015–16 and 2019–21 survey periods, not current 2026 conditions.
+- Added an interactive rural/urban multidimensional-poverty comparison from NITI Aayog’s 2023 review with Series (All/Rural/Urban) and Period (Both/2015-16/2019-21/Delta) layering, accompanied by a vector infographic of NITI Aayog's 3 dimensions and 12 indicators.
+- Created restrained, accessible context cards for key terms across slides (Raipur, Dakshin Kosala, Chitrakote, Dokra, Kanger Valley, Forest Cover, Sirpur, Mahanadi, MPI) with type badges (Photograph vs. Illustration/Schematic) and source credits.
+- Added 3 curated, multi-stop place journeys (Raipur Urban-Tribal Gateway, Southern Bastar Plateau, and Sirpur & Dakshin Kosala) that overlay slides without disrupting presentation flow and return focus cleanly on exit.
+- Added a non-cartographic conceptual regional orientation schematic (Northern Hills, Central Plains, Bastar Plateau) with explicit Survey of India disclaimer.
 - Replaced generic source-portal links with the primary publications used for the updated figures.
 
 ## Sources used

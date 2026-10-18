@@ -26,12 +26,16 @@
 }
 
 @media screen and (max-width:900px) {
-  .mpi-wrap{grid-template-columns:1fr;gap:1rem;padding:1rem}
-  .mpi-chart{padding:1rem}
-  .mpi-note{font-size:.92rem}
-  .mpi-legend{margin-bottom:1rem}
-  .mpi-row{margin:.85rem 0;grid-template-columns:4rem minmax(0,1fr);gap:.55rem}
-  .mpi-axis{margin-left:4.55rem}
+  .mpi-wrap{grid-template-columns:1fr;gap:1rem;padding:.5rem var(--pad) 1rem}
+  .mpi-chart-card{padding:1rem}
+  .mpi-note{font-size:.86rem;padding:1rem}
+  .mpi-legend{margin-bottom:.8rem}
+  .mpi-row{margin:.65rem 0;grid-template-columns:4.5rem minmax(0,1fr);gap:.6rem}
+  .mpi-axis{margin-left:5.1rem}
+  .mpi-toolbar{gap:.5rem;justify-content:flex-start}
+  .journey-modal{width:96vw;max-height:86vh}
+  .journey-body{grid-template-columns:1fr;gap:1rem;padding:1rem}
+  .journey-media-wrap{aspect-ratio:16/9;max-height:11rem}
   .cover-grid {
     grid-template-columns: 1fr;
     gap: var(--sp-4);
@@ -180,10 +184,18 @@
   .chrome,
   .overview,
   .explorer-card,
+  .journey-modal,
+  .journey-scrim,
+  .mpi-toolbar,
   .scrim,
   .skip,
   .annot {
     display: none !important
+  }
+
+  .mpi-bar[hidden],
+  .mpi-row[hidden] {
+    display: grid !important;
   }
 
   .deck {
